@@ -17,6 +17,11 @@ export default defineConfig(({ command, mode }) => {
     base: `${env.VITE_RESOURCE_URL}${!isDev ? outputDirName : ""}/`,
     mode,
     brotliSize: false, // 关闭打包计算的gzip大小报告
+    server: {
+      host: "0.0.0.0",
+      port: 8888, // 端口
+      proxy: env.VITE_BASE_URL
+    },
     build: {
       outDir: `dist/${outputDirName}`, // 使用"dist/时间戳"作为打包后路径
       assetsInlineLimit: 1024, // 小于1024转化为base64
