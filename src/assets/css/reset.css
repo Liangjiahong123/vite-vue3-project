@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+/* css 样式统一 */
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+div,
+th,
+td {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  /* -webkit-tap-highlight-color:transparent; */
+}
+
+html {
+  overflow: -moz-scrollbars;
+  overflow-y: auto;
+}
+
+/* 去掉标题默认大小 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/* 标签格式化 */
+s {
+  text-decoration: none;
+}
+
+i,
+em,
+address {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* 去掉蓝色边框 */
+fieldset,
+img {
+  border: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+select,
+input {
+  border: none;
+  outline: 0;
+}
+
+/* 防止拖动 影响布局 */
+textarea {
+  overflow: auto;
+  font: inherit;
+  resize: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+/* 覆盖滚动条 */
+::-webkit-scrollbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(144 147 153 / 0.3);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(144 147 153 / 0.5);
+}

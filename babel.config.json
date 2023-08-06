@@ -1,0 +1,11 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "usage", // 根据浏览器环境添加ES语法转换
+        "corejs": "3.26.1"
+      }
+    ]
+  ]
+}

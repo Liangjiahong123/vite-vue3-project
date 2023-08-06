@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es5", // 支持的最低语言版本
+    "module": "esnext", // 使用ES6模块语法
+    "baseUrl": "./", // 指定项目的根目录
+    "moduleResolution": "node", // 使用Node的模块解析
+    "paths": {
+      "@/*": ["src/*"] // 定义别名
+    },
+    "jsx": "preserve", // 使用preserve方式输出JSX代码
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"] // 指定可用的库
+  },
+  "exclude": ["node_modules"] // 需要排除编译的目录
+}
