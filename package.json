@@ -4,22 +4,26 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "vite --force",
+    "staging": "vite build --mode staging",
+    "prod": "vite build --mode production",
     "preview": "vite preview",
     "lint": "eslint \"src/**/*.{js,ts,vue,jsx,tsx}\" --fix",
     "prettier": "prettier --write .",
     "prepare": "husky install",
-    "gitadd": "git add .",
     "commit": "cz"
   },
   "dependencies": {
+    "dayjs": "^1.11.9",
     "vue": "^3.3.4"
   },
   "devDependencies": {
+    "@babel/core": "^7.22.9",
     "@babel/eslint-parser": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
     "@commitlint/cli": "^17.6.7",
     "@commitlint/config-conventional": "^17.6.7",
+    "@vitejs/plugin-legacy": "^4.1.1",
     "@vitejs/plugin-vue": "^4.2.3",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
@@ -28,7 +32,9 @@
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-vue": "^9.16.1",
     "husky": "^8.0.0",
+    "less": "^4.2.0",
     "lint-staged": "^13.2.3",
+    "normalize.css": "^8.0.1",
     "postcss-html": "^1.5.0",
     "postcss-less": "^6.0.0",
     "prettier": "^3.0.1",
@@ -39,7 +45,11 @@
     "stylelint-config-standard-vue": "^1.0.0",
     "stylelint-less": "^1.0.8",
     "stylelint-order": "^6.0.3",
-    "vite": "^4.4.5"
+    "terser": "^5.19.2",
+    "unplugin-auto-import": "^0.16.6",
+    "unplugin-vue-components": "^0.25.1",
+    "vite": "^4.4.5",
+    "vite-plugin-html": "^3.2.0"
   },
   "config": {
     "commitizen": {

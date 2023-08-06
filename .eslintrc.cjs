@@ -14,7 +14,8 @@ module.exports = {
     "eslint:recommended",
     "plugin:vue/vue3-essential", // 使用Vue3的规则配置
     "prettier", // 继承prettier配置
-    "plugin:prettier/recommended" // 使用Prettier的推荐配置
+    "plugin:prettier/recommended", // 使用Prettier的推荐配置
+    "./.eslintrc-auto-import.json"
   ],
   plugins: ["vue"],
   // 自定义规则

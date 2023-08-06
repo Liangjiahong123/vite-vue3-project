@@ -1,8 +1,4 @@
-<script setup>
-import HelloWorld from "./components/HelloWorld.vue";
-
-console.log("Hello World!");
-</script>
+<script setup></script>
 
 <template>
   <div>
