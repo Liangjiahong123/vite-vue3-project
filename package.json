@@ -9,9 +9,7 @@
     "prod": "vite build --mode production",
     "preview": "vite preview",
     "lint": "eslint \"src/**/*.{js,ts,vue,jsx,tsx}\" --fix",
-    "prettier": "prettier --write .",
-    "prepare": "husky install",
-    "commit": "cz"
+    "prettier": "prettier --write ."
   },
   "dependencies": {
     "axios": "^1.4.0",
