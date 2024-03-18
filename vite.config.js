@@ -66,11 +66,13 @@ export default defineConfig(({ command, mode }) => {
       AutoImport({
         resolvers: [ElementPlusResolver()],
         imports: ["vue", "vue-router"],
-        eslintrc: { enabled: true }
+        eslintrc: { enabled: true },
+        dts: "types/auto-imports.d.ts"
       }),
 
       Components({
-        resolvers: [ElementPlusResolver()]
+        resolvers: [ElementPlusResolver()],
+        dts: "types/components.d.ts"
       }),
 
       createHtmlPlugin({

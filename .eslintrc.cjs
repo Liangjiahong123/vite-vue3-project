@@ -7,8 +7,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: "latest", // 指定使用ECMAScript
     sourceType: "module",
-    requireConfigFile: false,
-    parser: "@babel/eslint-parser"
+    requireConfigFile: false
   },
   extends: [
     "eslint:recommended",
